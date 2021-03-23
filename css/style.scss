@@ -1,0 +1,678 @@
+// -------------------------------
+// 設定
+// -------------------------------
+$font-nomal: 14px;
+$main-color: #000000;
+$accent-color: #162e4b;
+
+
+// -------------------------------
+// 共通
+// -------------------------------
+body {
+  background-image: url(../images/bg.png);
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: $font-nomal;
+
+  .page {
+    // width: 1200px;
+    margin: 0 auto;
+
+    .top-image {
+      text-align: center;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        color: #fff;
+        position: absolute;
+        left: 80px;
+        bottom: 20px;
+        letter-spacing: 0.08em;
+      }
+    }
+
+    p {
+      // letter-spacing: 0.05em;
+      line-height: 1.9;
+    }
+  }
+}
+
+
+// -------------------------------
+// ヘッダー
+// -------------------------------
+header {
+  .inner {
+    // background-color:gray;
+    width: 1200px;
+    margin: 0 auto;
+
+    nav {
+      margin-bottom: 200px;
+
+      ul {
+        overflow: hidden;
+
+        li {
+          float: left;
+          margin: 70px 100px 50px 0;
+
+          // background-color: yellow;
+          &:first-child {
+            margin-left: 200px;
+          }
+
+          a {
+            text-decoration: none;
+            color: $main-color;
+            font-weight: 600;
+            font-size: 20px;
+          }
+
+          // マウスオーバー時//
+          a:hover {
+            border-bottom: 2px solid $main-color;
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+#top .nav-top,
+#about .nav-about,
+#beer .nav-beer,
+#food .nav-food,
+#goods .nav-goods,
+#access .nav-access {
+  a {
+    border-bottom: 2px solid $main-color;
+  }
+
+}
+
+
+// -------------------------------
+// メイン
+// -------------------------------
+.insta {
+  height: 300px;
+  background-color: $accent-color;
+  margin-bottom: 500px;
+  clear: both;
+  text-align: center;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      line-height: 300px;
+  
+      i {
+        font-size: 50px;
+        margin-right: 40px;
+      }
+  
+      span {
+        font-size: 52px;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+      }
+    }
+}
+
+
+// -------------------------------
+// フッター
+// -------------------------------
+footer {
+  background-color: $main-color;
+
+  .inner {
+    // background-color: blue;
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+    color: #fff;
+    position: relative;
+
+    h3 {
+      font-size: 32px;
+      font-weight: 500;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+
+    dl {
+      // background-color: red;
+      width: 310px;
+      position: absolute;
+      top: 180px;
+      left: 100px;
+
+      dt {
+        margin-bottom: 10px;
+      }
+
+      dd {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .navigation {
+      // background-color: red;
+      float: right;
+      position: absolute;
+      top: 180px;
+      left: 650px;
+
+      nav {
+        height: 320px;
+        border-left: 2px solid #fff;
+
+        ul {
+          li {
+            margin-left: 110px;
+            margin-bottom: 20px;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+
+            // マウスオーバー時//
+            a:hover {
+              border-bottom: 1px solid #fff;
+            }
+
+          }
+        }
+      }
+    }
+
+    .icon {
+      // background-color: yellow;
+      width: 380px;
+      position: absolute;
+      bottom: 80px;
+      left: 310px;
+
+      nav {
+        ul {
+          overflow: hidden;
+
+          li {
+            // background-color: red;
+            font-size: 57px;
+            float: left;
+            margin-right: 60px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    small {
+      // background-color: red;
+      position: absolute;
+      bottom: 40px;
+      left: 460px;
+    }
+  }
+}
+
+
+// -------------------------------
+// トップページ
+// -------------------------------
+#top {
+  main {
+    .about {
+      width: 1620px;
+      height: 600px;
+      background-image: url(../images/main-about-new.jpg);
+      margin: 0 auto 250px auto;
+      text-align: center;
+
+      .bg-color {
+        height: 600px;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4ss ease;
+
+        h1 {
+          color: #fff;
+          font-size: 64px;
+          padding-top: 150px;
+          letter-spacing: 0.1em;
+          font-weight: 500;
+          padding-bottom: 20px;
+
+          .border {
+            display: block;
+            border-bottom: 5px solid #fff;
+            width: 100px;
+            margin: 30px auto 60px auto;
+          }
+        }
+
+        p {
+          color: #fff;
+          line-height: 2.3;
+          letter-spacing: 0.15em;
+          
+        }
+      }
+
+      // マウスオーバー時
+      .bg-color:hover {
+        background-color: rgba(22, 46, 75, .5);
+      }
+    }
+
+    section {
+      width: 980px;
+      margin: 0 auto 200px auto;
+      overflow: hidden;
+
+      &:last-child {
+        margin-bottom: 300px;
+      }
+
+      h2 {
+        // background-color: red;
+        font-size: 60px;
+        width: 260px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      p {
+        // background-color: yellow;
+        border-bottom: 4px solid $main-color;
+        width: 260px;
+        padding-bottom: 20px;
+        letter-spacing: 0.15em;
+        font-weight: 600;
+        
+      }
+      
+
+
+    }
+
+    .beer {
+      .discription {
+        float: right;
+        margin-right: 20px;
+      }
+      img{
+        opacity: 0;
+        position: relative;
+        right: -600px;
+      }
+      img.on{
+        opacity: 1;
+        right: 0;        
+      }
+    }
+
+    .food {
+      img {
+        float: right;
+        opacity: 0;
+        // margin-right: 300px;
+        position: relative;
+        left: -600px;
+      }
+      img.on{
+        opacity: 1;
+        left: 0;
+        // margin-right: 0px;
+      }
+      .discription {
+        margin-left: 20px;
+      }
+    }
+
+    .goods {
+      .discription {
+        float: right;
+        margin-right: 20px;
+      }
+      img{
+        opacity: 0;
+        position: relative;
+        right: -600px;
+      }
+      img.on{
+        opacity: 1;
+        right: 0;
+
+      }
+    }
+    
+  }
+}
+
+
+// -------------------------------
+// アバウトページ
+// -------------------------------
+
+#about {
+  main {
+    section {
+      width: 1000px;
+      margin: 0 auto 200px auto;
+      // background-color: blue;
+      h1 {}
+
+      p {
+        // background-color: yellow;
+        line-height: 2.1;
+      }
+    }
+
+    .enjoy {
+      h1 {
+        font-size: 160px;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        line-height: 0.9;
+
+        span {
+          font-size: 130px;
+        }
+      }
+
+      .enjoy-image {
+        // background-color: red;
+        height: 1090px;
+        background-image: url(../images/about-eb.png);
+        background-repeat: no-repeat;
+
+        p {
+          width: 470px;
+          height: 240px;
+          // padding-top: 10px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .brewer {
+      position: relative;
+      margin-bottom: 300px;
+
+      h1 {
+        font-size: 130px;
+        font-weight: 500;
+        margin-left: 50px;
+        margin-bottom: 10px;
+      }
+
+      .brewer-image {
+        // background-color: red;
+        // width: 1000px;
+        height: 1460px;
+        background-image: url(../images/about-br.png);
+
+        p {}
+
+        .discription {
+          // background-color: yellow;
+          width: 330px;
+          margin-left: 60px;
+          padding-top: 30px;
+        }
+
+        .name {
+          // background-color: greenyellow;
+          width: 170px;
+          position: absolute;
+          top: 650px;
+          right: 170px;
+        }
+      }
+    }
+
+    .history {
+      width: 1620px;
+      height: 600px;
+      background-image: url(../images/about-history-new.jpg);
+      margin: 0 auto 300px auto;
+      text-align: center;
+      .bg-color{
+        height: 600px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        h2 {
+          color: #fff;
+          font-size: 64px;
+          padding-top: 150px;
+          letter-spacing: 0.1em;
+          font-weight: 500;
+          .border {
+            display: block;
+            border-bottom: 5px solid #fff;
+            width: 100px;
+            margin: 30px auto 60px auto;
+          }
+        }
+        .discription {
+          text-align: left;
+          margin-left: 450px;
+          p {
+            color: #fff;
+            line-height: 2.3;
+            letter-spacing: 0.15em;
+          }
+        }
+      }
+      // マウスオーバー時
+      .bg-color:hover {
+        background-color: rgba(22, 46, 75, .5);
+      } 
+    }
+  }
+}
+
+
+// -------------------------------
+// ビアページ
+// -------------------------------
+
+#beer {
+  header {
+    nav {
+      margin-bottom: 0;
+    }
+  }
+
+  main {
+    // background-color: yellow;
+    margin: 0 auto 300px auto;
+    padding-top: 10px;
+    overflow: hidden;
+
+    // position: relative;
+    h1 {
+      width: 1100px;
+      font-size: 110px;
+      // background-color: blue;
+      margin: 0 auto;
+      position: relative;
+      top: 190px;
+      // position: absolute;
+      // left: 100px;
+
+      span {
+        font-size: 200px;
+        font-weight: 500;
+
+      }
+    }
+
+    .bg-image {
+      // width: 1200px;
+      height: 2540px;
+      background-image: url(../images/menu-bg-new.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 300px;
+
+      .inner{
+        // width: 1200px;
+
+      
+
+      section {
+        width: 550px;
+        height: 600px;
+        color: #fff;
+        margin-bottom: 100px;
+        position: relative;
+        
+
+        h2 {
+          font-size: 32px;
+          font-weight: 500;
+          margin-top: 40px;
+          margin-left: 40px;
+        }
+
+        .price {
+          font-size: 30px;
+          font-weight: 500;
+          margin-left: 40px;
+
+          span {
+            font-size: $font-nomal;
+            font-weight: 600;
+          }
+        }
+
+        .discription {
+          // background-color: red;
+          font-weight: 600;
+
+          padding: 30px 40px 30px 40px;
+          position: absolute;
+          bottom: 0;
+          background-color: rgba(0, 0, 102, .3);
+
+        }
+      }
+
+      .shuri-red {
+        background-image: url(../images/menu-beer1.jpg);
+        float: left;
+        margin-top: 300px;
+        margin-left: 420px;
+      }
+
+      .shuri-yellow {
+        background-image: url(../images/menu-beer2.jpg);
+        float: right;
+        clear: both;
+        margin-right: 420px;
+      }
+
+      .hefe {
+        background-image: url(../images/menu-beer3.jpg);
+        float: left;
+        clear: both;
+        margin-left: 420px;
+      }
+    }
+
+    }
+
+    .other-beer{
+      width: 1620px;
+      height: 1500px;
+      background-image: url(../images/other-menu.jpg);
+      margin: 0 auto 300px auto;
+      text-align: center;
+      .bg-color{
+        height: 1500px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        h3{
+          color: #fff;
+          font-size: 64px;
+          padding-top: 80px;
+          letter-spacing: 0.1em;
+          font-weight: 500;
+         
+          .border {
+            display: block;
+            border-bottom: 5px solid #fff;
+            width: 500px;
+            margin: 30px auto 60px auto;
+          }
+        }
+        .discription {
+          text-align: left;
+          margin-left: 50px;
+          p {
+            color: #fff;
+            font-size: 20px;
+            // line-height: 3.3;
+            letter-spacing: 0.15em;
+            margin-bottom: 40px;
+            span{
+              font-size: 22px;
+              font-weight: 600;
+            }
+
+          }
+        }
+      }
+      // マウスオーバー時
+      .bg-color:hover {
+        background-color: rgba(22, 46, 75, .5);
+      } 
+    }
+
+
+
+
+
+
+
+
+  }
+}
